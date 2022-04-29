@@ -1,28 +1,53 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app" :class="mode">
+    <!-- <h1>hello world</h1> -->
+    <ChidiHeader :mode="mode" @toggle="toggle"> </ChidiHeader>
+    <h2>uuu</h2>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ChidiHeader from "./components/Header";
 export default {
-  name: 'App',
+  name: "app",
+
   components: {
-    HelloWorld
-  }
-}
+    ChidiHeader,
+  },
+
+  data() {
+    return {
+      mode: "white",
+    };
+  },
+
+  methods: {
+    toggle() {
+      if (this.mode === "dark") {
+        this.mode = "light";
+      } else {
+        this.mode = "dark";
+      }
+    },
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  color: black !important;
+}
+.dark {
+  background-color: black;
+  color: white !important;
 }
 </style>
