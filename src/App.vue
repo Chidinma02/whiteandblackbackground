@@ -2,17 +2,22 @@
   <div class="app" :class="mode">
     <!-- <h1>hello world</h1> -->
     <ChidiHeader :mode="mode" @toggle="toggle"> </ChidiHeader>
-    <h2>uuu</h2>
+
+    <router-view />
+    <WorkspaceJsonFooter></WorkspaceJsonFooter>
   </div>
 </template>
 
 <script>
 import ChidiHeader from "./components/Header";
+import WorkspaceJsonFooter from "./components/Footer";
+import "animate.css";
 export default {
   name: "app",
 
   components: {
     ChidiHeader,
+    WorkspaceJsonFooter,
   },
 
   data() {
@@ -49,5 +54,8 @@ export default {
 .dark {
   background-color: black;
   color: white !important;
+}
+body {
+  overflow-x: hidden;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <!-- <h1>{{ mode }}</h1> -->
     <!-- <nav> -->
     <!-- <div class="nav-link">Home</div> -->
@@ -22,36 +22,41 @@
         ></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav>
-            <b-nav-item href="#" class="cg">Home</b-nav-item>
-            <b-nav-item href="#" class="cg">About</b-nav-item>
+          <b-navbar-nav class="ml-auto bnav">
+            <b-nav-item href="#" class="ml-5" :to="{ name: 'home' }"
+              >Home
+            </b-nav-item>
+            <b-nav-item href="#" class="ml-5" :to="{ name: 'about' }"
+              >About
+            </b-nav-item>
+            <b-nav-item href="https://chidinmablog.hashnode.dev/" class="ml-5"
+              >Blog</b-nav-item
+            >
+            <b-nav-item
+              href="https://github.com/Chidinma02/OkwuohaChidinma.git"
+              class="ml-5"
+              >Github</b-nav-item
+            >
 
-            <b-nav-item href="#" disabled>Disabled</b-nav-item>
+            <!-- <a -->
+            <!-- href="../assets/Chidinma's Resume (1).pdf" -->
+            <!-- class="btn btn-lg butt pl-3 pr-3 ml-5 navi" -->
+            <!-- >Download Cv</a -->
+            <!-- > -->
+            <a
+              :href="pdflink"
+              download="true"
+              class="btn btn-lg butt pl-3 pr-3 ml-5 navi"
+              >Download Cv</a
+            >
             <ChidiTogglebutton
               :mode="mode"
               @toggle="$emit('toggle')"
-              class="d-none d-lg-block"
+              class="d-none d-lg-block se"
             ></ChidiTogglebutton>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown text="Lang" right>
-              <b-dropdown-item href="#">EN</b-dropdown-item>
-              <b-dropdown-item href="#">ES</b-dropdown-item>
-              <b-dropdown-item href="#">RU</b-dropdown-item>
-              <b-dropdown-item href="#">FA</b-dropdown-item>
-            </b-nav-item-dropdown>
-
-            <b-nav-item-dropdown right>
-              <!-- Using 'button-content' slot -->
-              <template #button-content>
-                <em>User</em>
-              </template>
-              <b-dropdown-item href="#">Profile</b-dropdown-item>
-              <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-            </b-nav-item-dropdown>
-          </b-navbar-nav>
         </b-collapse>
       </b-navbar>
     </div>
@@ -60,6 +65,8 @@
 
 <script>
 import ChidiTogglebutton from "../components/ToggleButton";
+import pdf from "../assets/Chidinma's Resume (1).pdf";
+import "animate.css";
 export default {
   name: "ChidiHeader",
   components: {
@@ -68,7 +75,9 @@ export default {
   props: ["mode"],
 
   data() {
-    return {};
+    return {
+      pdflink: pdf,
+    };
   },
 
   mounted() {},
@@ -98,6 +107,7 @@ b-nav-item:hover {
 }
 .dark b-navbar {
   color: white !important;
+  margin-left: 100px !important;
 }
 .dark b-navbar-toggle {
   color: white !important;
@@ -111,17 +121,55 @@ b-nav-item:hover {
 }
 .dark .nav-item.nav-item.nav-item a {
   color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.nav-item.nav-item.nav-item a {
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 50px;
 }
 
 .dark .navbar-brand {
   color: white !important;
 }
 .brandco {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 .vm {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: 767px) and (max-width: 2560px) {
+  .dark .bnav {
+    margin-left: 400px !important;
+  }
+  .bnav {
+    margin-left: 350px !important;
+  }
+  .butt {
+    margin-left: 20px;
+  }
+  .se {
+    margin-left: 30px;
+  }
+}
+.butt {
+  border: 1px solid #15bf50;
+}
+.dark .butt {
+  color: white !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+}
+a {
+}
+.navi {
+  font-size: 17px !important;
+  font-weight: bold !important;
 }
 </style>

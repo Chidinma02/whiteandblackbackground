@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <WorkspaceJsonAbo></WorkspaceJsonAbo>
   </div>
 </template>
+
+<script>
+import WorkspaceJsonAbo from "../components/Abo";
+export default {
+  name: "HomeView",
+  components: {
+    WorkspaceJsonAbo,
+  },
+};
+</script>
+
