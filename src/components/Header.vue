@@ -32,9 +32,7 @@
             <b-nav-item href="https://chidinmablog.hashnode.dev/" class="ml-5"
               >Blog</b-nav-item
             >
-            <b-nav-item
-              href="https://github.com/Chidinma02/OkwuohaChidinma.git"
-              class="ml-5"
+            <b-nav-item href="https://github.com/Chidinma02" class="ml-5"
               >Github</b-nav-item
             >
 
