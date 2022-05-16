@@ -52,10 +52,6 @@ export default {
 <style lang="css" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap");
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
 .bu {
   background-color: #15bf50;
   /* color: white;*/

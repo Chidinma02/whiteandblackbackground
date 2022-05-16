@@ -63,7 +63,7 @@
 
 <script>
 import ChidiTogglebutton from "../components/ToggleButton";
-import pdf from "../assets/Chidinma's Resume (1).pdf";
+import pdf from "../assets/Chidinma_Okwuoha_Resume_2 (2).pdf";
 import "animate.css";
 export default {
   name: "ChidiHeader",
