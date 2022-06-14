@@ -88,7 +88,7 @@
                   <p class="mt-3">Unsplash clone</p>
                 </div>
                 <div class="col-6">
-                  <a href="https://eden-app.netlify.app">
+                  <a href="https://unsplashclone1.netlify.app/">
                     <img
                       alt="Qries"
                       src="../assets/Frame 8.png"
@@ -217,6 +217,84 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4 col-sm-12">
+            <div class="di cl">
+              <div class="">
+                <img
+                  src="../assets/FireShot Capture 046 - fundal - fundalproject.netlify.app.png"
+                  class="img-fluid vt"
+                />
+              </div>
+
+              <div class="row pt-2 pb-2 mb-5">
+                <div class="col-6">
+                  <p class="mt-3">Expense Tracker</p>
+                </div>
+                <div class="col-6">
+                  <a href="https://fundalproject.netlify.app">
+                    <img
+                      alt="Qries"
+                      src="../assets/Frame 8.png"
+                      width="50px"
+                      height="50px"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="di cl">
+              <div class="">
+                <img
+                  src="../assets/FireShot Capture 047 - bitmama - bitmama1.netlify.app.png"
+                  class="img-fluid vt"
+                />
+              </div>
+
+              <div class="row pt-2 pb-2 mb-5">
+                <div class="col-6">
+                  <p class="mt-3">Register</p>
+                </div>
+                <div class="col-6">
+                  <a href="https://bitmama1.netlify.app">
+                    <img
+                      alt="Qries"
+                      src="../assets/Frame 8.png"
+                      width="50px"
+                      height="50px"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 col-sm-12"> -->
+          <!-- <div class="di cl"> -->
+          <!-- <div class=""> -->
+          <!-- <img src="../assets/to.png" class="img-fluid vt" /> -->
+          <!-- </div> -->
+
+          <!-- <div class="row pt-2 pb-2 mb-5"> -->
+          <!-- <div class="col-6"> -->
+          <!-- <p class="mt-3">Todo</p> -->
+          <!-- </div> -->
+          <!-- <div class="col-6"> -->
+          <!-- <a href="https://toodo1.netlify.app/"> -->
+          <!-- <img -->
+          <!-- alt="Qries" -->
+          <!-- src="../assets/Frame 8.png" -->
+          <!-- width="50px" -->
+          <!-- height="50px" -->
+          <!-- /> -->
+          <!-- </a> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>

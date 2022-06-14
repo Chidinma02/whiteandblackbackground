@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="cont">
-      <div class="container">
-        <div class="row con pt-5 pb-5 mb-5">
+    <div class="cont mt-5">
+      <div class="container mt-5">
+        <div class="row con pt-5 pb-5 mb-5 mt-5">
           <div class="col-12">
             <h2>
               <span></span> <img src="../assets/Vector (1).png" />Want to work
