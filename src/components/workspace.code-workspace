@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "..\\.."
+	},
+	{
+		"path": "..\\..\\..\\chairman"
+	}
+],
+  "settings": {
+    "nuxt.isNuxtApp": false
+  }
+}

@@ -1,0 +1,1 @@
+<template> <div class="home"> <WorkspaceJsonLanding></WorkspaceJsonLanding> <WorkspaceJsonFea></WorkspaceJsonFea> </div></template><script>import WorkspaceJsonLanding from "../components/Landing";import WorkspaceJsonFea from "../components/fea";export default { name: "HomeView", components: { WorkspaceJsonLanding, WorkspaceJsonFea, },};</script>
